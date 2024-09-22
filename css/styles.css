@@ -340,7 +340,7 @@ img {
   text-align: center;
 }
 
-.footer-logo {
+.footer-section .footer-logo {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
