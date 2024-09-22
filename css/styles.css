@@ -125,7 +125,6 @@ img {
 /* Hero Section */
 .hero-section {
   padding: 188px 0;
-  /* Відступи всередині секції */
   background-color: #2e2f42;
   text-align: center;
 }
@@ -139,9 +138,7 @@ img {
   text-transform: capitalize;
   color: #ffffff;
   max-width: 496px;
-  /* Визначає ширину тексту в заголовку та переносить рядок*/
   margin: 0 auto;
-  /* Вирівнювання заголовка по центру */
 }
 
 .hero-btn {
@@ -329,19 +326,20 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
-  /* Горизонтальне розташування елементів */
   flex-wrap: wrap;
-  /* Перенос елементів на новий рядок */
   column-gap: 24px;
-  /* Горизонтальні відступи між елементами */
   row-gap: 48px;
-  /* Вертикальні відступи між елементами */
 }
 
 .portfolio-item {
   width: calc((100% - 72px) / 3);
-  /* Ширина для кожного елемента */
   text-align: center;
+}
+
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .section-portfolio-title {
@@ -353,7 +351,6 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
   margin-bottom: 72px;
-  /* Відступ між заголовком і списком */
 }
 
 .portfolio-title {
@@ -404,5 +401,9 @@ img {
   margin: 0 auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.span-logo-light {
   color: #f4f4fd;
 }
