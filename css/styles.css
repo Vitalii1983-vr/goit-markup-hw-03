@@ -55,7 +55,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   margin-right: 76px;
-  /* Відступ праворуч від логотипа */
+  margin-bottom: 16px;
+  display: inline-block; 
 }
 
 .span-logo-dark {
@@ -64,20 +65,14 @@ img {
 
 .header-nav {
   display: flex;
-  /* Розміщує логотип і меню в одну лінію */
   align-items: center;
-  /* Вирівнює логотип і навігаційні елементи по вертикалі */
 }
 
 .header-nav-list {
   display: flex;
-  /* Розміщення пунктів меню горизонтально */
   gap: 40px;
-  /* Відступ між пунктами меню */
   list-style: none;
-  /* Прибираємо маркери списку */
   padding: 0;
-  /* Видаляємо стандартні відступи списку */
   margin: 0;
 }
 
@@ -193,7 +188,9 @@ img {
 }
 
 .benefits-list {
+  display: flex;
   list-style: none;
+  gap: 24px;
 }
 
 .benefits-item {
@@ -244,7 +241,6 @@ img {
 .section-team-title {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 72px;
-  /* Відступ між заголовком і контентом */
   font-size: 36px;
   font-weight: 500;
   line-height: 1.11;
@@ -313,13 +309,10 @@ img {
   background-color: rgb(255, 255, 255);
 }
 
-.portfolio-container {
+.container {
   padding: 32px 16px;
-  /* Відступи всередині контейнера */
   border: 1px solid #e7e9fc;
-  /* Обведення контейнера */
   border-top: none;
-  /* Скидання обведення для верхньої частини */
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
