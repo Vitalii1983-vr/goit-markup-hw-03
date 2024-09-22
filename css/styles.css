@@ -38,18 +38,15 @@ img {
 
 .header-container {
   display: flex;
-  /* Для розміщення навігації та контактів в одну лінію */
   justify-content: space-between;
   align-items: center;
 }
 
 .container {
   width: 1158px;
-  /* Визначає ширину контейнера */
   margin: 0 auto;
-  /* Центрує контейнер на сторінці */
   padding: 0 15px;
-  /* Внутрішні відступи зліва та справа */
+  display: flex;
 }
 
 .header-logo {
@@ -171,13 +168,6 @@ img {
   background-color: rgb(255, 255, 255);
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-}
-
 .visually-hidden {
   display: flex;
   position: absolute;
@@ -234,15 +224,6 @@ img {
   background-color: #f4f4fd;
 }
 
-.container {
-  width: 1158px;
-  /* Ширина контейнера */
-  margin: 0 auto;
-  /* Центрування контейнера */
-  padding: 0 15px;
-  /* Відступи з боків */
-}
-
 .section-team-title {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 72px;
@@ -257,27 +238,21 @@ img {
 
 .team-list {
   display: flex;
-  /* Горизонтальне розташування елементів списку */
   gap: 24px;
-  /* Відступи між елементами списку */
   list-style: none;
-  /* Прибираємо маркери списку */
   padding: 0;
   margin: 0;
 }
 
 .team-item {
   width: calc((100% - 72px) / 4);
-  /* Ширина для кожного пункту списку */
   border-radius: 0px 0px 4px 4px;
-  /* Заокруглення нижніх кутів */
   text-align: center;
   background-color: #ffffff;
 }
 
 .team-info {
   padding: 32px 0;
-  /* Відступи від краю контейнера */
 }
 
 .team-title {
@@ -289,14 +264,11 @@ img {
   margin-bottom: 8px;
   color: #2e2f42;
   text-align: center;
-  /* Вирівнювання тексту по центру */
   margin-bottom: 8px;
-  /* Відступ від заголовка до параграфу */
 }
 
 .team-desc {
   text-align: center;
-  /* Вирівнювання тексту по центру */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -306,21 +278,20 @@ img {
 /* Portfolio Section */
 .portfolio {
   padding-top: 120px;
-  /* Відступ зверху */
   padding-bottom: 120px;
-  /* Відступ знизу */
   padding: 120px 0;
-  /* Відступи зверху та знизу секції */
   background-color: rgb(255, 255, 255);
 }
 
-.container {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+.section-portfolio-title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -342,17 +313,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-}
-
-.section-portfolio-title {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
 }
 
 .portfolio-title {
@@ -378,12 +338,6 @@ img {
   padding: 100px 0;
   background-color: #2e2f42;
   text-align: center;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .footer-logo {
