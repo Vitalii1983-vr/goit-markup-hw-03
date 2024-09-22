@@ -1,5 +1,3 @@
-/* Varible */
-
 /* Base */
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,7 +6,14 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -56,7 +61,7 @@ img {
   color: #4d5ae5;
   margin-right: 76px;
   margin-bottom: 16px;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .span-logo-dark {
@@ -96,16 +101,17 @@ img {
   font-style: normal;
 }
 
+.contact-list {
+  display: flex;
+  gap: 40px
+}
+
 .contact-link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
-  display: flex;
-  /* Розташування контактів по горизонталі */
-  gap: 40px;
-  /* Відступ між пунктами контактів */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -371,7 +377,6 @@ img {
 /* Footer Section */
 .footer-section {
   padding: 100px 0;
-  /* Відступи всередині футера */
   background-color: #2e2f42;
   text-align: center;
 }
@@ -391,19 +396,13 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
-  /* Додаємо блочні властивості */
   margin-bottom: 16px;
-  /* Відступ між посиланням і параграфом */
+}
 
-
-  .span-logo-light {
-    color: #f4f4fd;
-  }
-
-  .footer-desc {
-    max-width: 264px;
-    margin: 0 auto;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;    
-  }
+.footer-desc {
+  max-width: 264px;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
