@@ -1,3 +1,5 @@
+/* Varible */
+
 /* Base */
 body {
   font-family: 'Roboto', sans-serif;
@@ -8,13 +10,37 @@ body {
 
 a {
   text-decoration: none;
-  }
-  
-  ul {
+}
+
+ul {
   list-style: none;
-  }
+}
+
+img {
+  display: block;
+}
 
 /* Header Styles */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  /* Для розміщення навігації та контактів в одну лінію */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  /* Визначає ширину контейнера */
+  margin: 0 auto;
+  /* Центрує контейнер на сторінці */
+  padding: 0 15px;
+  /* Внутрішні відступи зліва та справа */
+}
+
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -23,15 +49,31 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
+  /* Відступ праворуч від логотипа */
 }
 
 .span-logo-dark {
   color: #2e2f42;
 }
+
+.header-nav {
+  display: flex;
+  /* Розміщує логотип і меню в одну лінію */
+  align-items: center;
+  /* Вирівнює логотип і навігаційні елементи по вертикалі */
 }
 
 .header-nav-list {
+  display: flex;
+  /* Розміщення пунктів меню горизонтально */
+  gap: 40px;
+  /* Відступ між пунктами меню */
   list-style: none;
+  /* Прибираємо маркери списку */
+  padding: 0;
+  /* Видаляємо стандартні відступи списку */
+  margin: 0;
 }
 
 .nav-link {
@@ -41,6 +83,8 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
+  /* Відступи всередині посилання */
 }
 
 .nav-link:hover,
@@ -58,6 +102,13 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
   text-decoration: none;
+  display: flex;
+  /* Розташування контактів по горизонталі */
+  gap: 40px;
+  /* Відступ між пунктами контактів */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .contact-link:hover,
@@ -67,6 +118,8 @@ a {
 
 /* Hero Section */
 .hero-section {
+  padding: 188px 0;
+  /* Відступи всередині секції */
   background-color: #2e2f42;
   text-align: center;
 }
@@ -79,6 +132,10 @@ a {
   text-align: center;
   text-transform: capitalize;
   color: #ffffff;
+  max-width: 496px;
+  /* Визначає ширину тексту в заголовку та переносить рядок*/
+  margin: 0 auto;
+  /* Вирівнювання заголовка по центру */
 }
 
 .hero-btn {
@@ -90,16 +147,44 @@ a {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 /* Benefits Section */
 .benefits {
+  padding: 120px 0;
   background-color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+
+.visually-hidden {
+  display: flex;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .benefits-list {
@@ -107,7 +192,16 @@ a {
 }
 
 .benefits-item {
+  width: calc((100% - 72px) / 4);
+  /* Ширина для кожного пункту списку */
   text-align: center;
+  display: flex;
+  /* Горизонтальне розташування елементів списку */
+  gap: 24px;
+  /* Відступи між елементами списку */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .benefits-title {
@@ -116,6 +210,8 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  /* Відступ між заголовком і параграфом */
 }
 
 .benefits-desc {
@@ -127,11 +223,23 @@ a {
 
 /* Our Team Section */
 .our-team {
+  padding: 120px 0;
   background-color: #f4f4fd;
+}
+
+.container {
+  width: 1158px;
+  /* Ширина контейнера */
+  margin: 0 auto;
+  /* Центрування контейнера */
+  padding: 0 15px;
+  /* Відступи з боків */
 }
 
 .section-team-title {
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 72px;
+  /* Відступ між заголовком і контентом */
   font-size: 36px;
   font-weight: 500;
   line-height: 1.11;
@@ -142,12 +250,28 @@ a {
 }
 
 .team-list {
+  display: flex;
+  /* Горизонтальне розташування елементів списку */
+  gap: 24px;
+  /* Відступи між елементами списку */
   list-style: none;
+  /* Прибираємо маркери списку */
+  padding: 0;
+  margin: 0;
 }
 
 .team-item {
+  width: calc((100% - 72px) / 4);
+  /* Ширина для кожного пункту списку */
+  border-radius: 0px 0px 4px 4px;
+  /* Заокруглення нижніх кутів */
   text-align: center;
   background-color: #ffffff;
+}
+
+.team-info {
+  padding: 32px 0;
+  /* Відступи від краю контейнера */
 }
 
 .team-title {
@@ -156,10 +280,17 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 8px;
   color: #2e2f42;
+  text-align: center;
+  /* Вирівнювання тексту по центру */
+  margin-bottom: 8px;
+  /* Відступ від заголовка до параграфу */
 }
 
 .team-desc {
+  text-align: center;
+  /* Вирівнювання тексту по центру */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -168,14 +299,44 @@ a {
 
 /* Portfolio Section */
 .portfolio {
+  padding-top: 120px;
+  /* Відступ зверху */
+  padding-bottom: 120px;
+  /* Відступ знизу */
+  padding: 120px 0;
+  /* Відступи зверху та знизу секції */
   background-color: rgb(255, 255, 255);
 }
 
-.portfolio ul {
-  list-style: none;
+.portfolio-container {
+  padding: 32px 16px;
+  /* Відступи всередині контейнера */
+  border: 1px solid #e7e9fc;
+  /* Обведення контейнера */
+  border-top: none;
+  /* Скидання обведення для верхньої частини */
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.portfolio li {
+.portfolio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* Горизонтальне розташування елементів */
+  flex-wrap: wrap;
+  /* Перенос елементів на новий рядок */
+  column-gap: 24px;
+  /* Горизонтальні відступи між елементами */
+  row-gap: 48px;
+  /* Вертикальні відступи між елементами */
+}
+
+.portfolio-item {
+  width: calc((100% - 72px) / 3);
+  /* Ширина для кожного елемента */
   text-align: center;
 }
 
@@ -187,6 +348,8 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+  /* Відступ між заголовком і списком */
 }
 
 .portfolio-title {
@@ -195,9 +358,10 @@ a {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  margin-bottom: 8px;
   color: #2e2f42;
 }
-
 
 .portfolio-desc {
   font-size: 16px;
@@ -208,8 +372,16 @@ a {
 
 /* Footer Section */
 .footer-section {
+  padding: 100px 0;
+  /* Відступи всередині футера */
   background-color: #2e2f42;
   text-align: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .footer-logo {
@@ -220,14 +392,21 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-}
+  display: inline-block;
+  /* Додаємо блочні властивості */
+  margin-bottom: 16px;
+  /* Відступ між посиланням і параграфом */
 
-.span-logo-light {
-  color: #f4f4fd;
-}
 
-.footer-desc {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-}
+  .span-logo-light {
+    color: #f4f4fd;
+  }
+
+  .footer-desc {
+    max-width: 264px;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;    
+  }
+  
